@@ -2,10 +2,8 @@ on: push
 jobs:
   Build:
     runs-on: ubuntu-latest
-container: gradle:6-jdk11
-
-steps:
-- name: Clone-down
-  uses: actions/checkout@v2
-
- - run: chmod +x github-actions-katas/ci/build-app.sh && github-actions-katas/ci/build-app.sh
+    container: gradle:6-jdk11
+    steps:
+      - name: Clone-down
+        uses: actions/checkout@v2       
+      - run: chmod +x ci/build-app.sh && ci/build-app.sh
