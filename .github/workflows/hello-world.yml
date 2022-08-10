@@ -16,4 +16,4 @@ steps:
 - name: Clone-down
   uses: actions/checkout@v2
 
- - run: chmod +x ci/build-app.sh && ci/build-app.sh
+ - run: chmod +x github-actions-katas/ci/build-app.sh && github-actions-katas/ci/build-app.sh
